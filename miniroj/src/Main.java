@@ -3,27 +3,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Miniröj");
+
 
         Gameboard game = new Gameboard();
         Player player = new Player();
 
+        System.out.println("Vilken ruta vill du undersöka?");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Row: ");
-        String row = scanner.nextLine();
-        System.out.println("Column: ");
-        int col = scanner.nextInt();
+
+        String rowCol = scanner.nextLine();
 
         startGame();
-        selectCell(row, col);
+        selectCell(rowCol);
     }
 
     private static void startGame() {
         //starting game
     }
 
-    private static <row> void selectCell(String row, int col){
-        //selecting cell
+    private static <row> void selectCell(String rowCol){
+        System.out.println("Du valde ruta " + rowCol);
     }
 
 
